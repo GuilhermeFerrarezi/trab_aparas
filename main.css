@@ -1,0 +1,91 @@
+:root {
+    font-size: 10px;
+    --heading-height: 20rem;
+}
+
+div{
+    padding-bottom: 2%;
+}
+
+body{
+    
+    font-family: "Roboto", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #C3D9E2;
+    margin: 0;
+    align-items: center;
+}
+
+header {
+	position: absolute;
+	width: 100%;
+	height: var(--heading-height);
+}
+
+/* Create angled background with 'before' pseudo-element */
+header::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 6em;
+	width: 100%;
+	height: var(--heading-height);
+	z-index: -1;
+	background-color: #076389;
+	background-size: cover;
+}
+
+
+h1 {
+    font-size: calc(1em + 2.6vw);
+    font-weight: 700;
+    letter-spacing: .01em;
+    padding-left: 3rem;
+    text-shadow: .022em .022em .022em #111;
+    color: #fff;
+}
+
+h2 {
+    font-size: calc(1em + 1vw);;
+    font-weight: 700;
+    letter-spacing: .01em;
+    padding: 0rem 3rem;
+    text-shadow: .022em .022em .022em #111;
+    color: #37414F;
+} 
+
+main {
+    padding: var(--heading-height) 4em 0;
+}
+
+p {
+    font-size: calc(1em + 0.5vw);
+    font-weight: 700;
+    letter-spacing: .01em;
+    padding: 0rem 3rem;
+    color: #37414F;
+}
+
+label{
+    font-size: calc(1em + 0.3vw);
+    font-weight: 700;
+    letter-spacing: .01em;
+    color: #000;
+    justify-content: flex-end;
+}
+
+.container{
+    padding-bottom: 200px;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container_title{
+    padding-top: 150px;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
