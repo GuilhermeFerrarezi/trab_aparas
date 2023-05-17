@@ -28,10 +28,18 @@ h1 {
 h2 {
     font-size: calc(1em + 1vw);;
     font-weight: 700;
-    letter-spacing: .01em;
     text-shadow: .022em .022em .022em #111;
     color: #37414F;
 } 
+
+h3{
+    font-size: calc(1em + 0.5vw);;
+    font-weight: 700;
+    color: #404749;
+    background-color: #d1e5ee;
+    border-radius:90px;
+    text-align: center;
+}
 
 p {
     font-size: calc(1em + 0.5vw);
