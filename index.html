@@ -11,6 +11,7 @@
         <link rel = "stylesheet" type = "text/css" href = "./css/button.css">
         <link rel = "stylesheet" type = "text/css" href = "./css/campo.css">
         <link rel = "stylesheet" type = "text/css" href = "./css/header.css">
+        <link rel = "stylesheet" type = "text/css" href = "./css/container.css">
 
         <!-- Nome da pagina -->
         <title>Neo Roman</title>
@@ -29,126 +30,151 @@
             <h2>Seja bem-vindo(a)!</h2>
         
         </div>
-            <!-- CONTAINER DE FORMUÃRIO -->
-            <div class = "container">
+
+
+
+        <!-- CONTAINER DE FORMUÃRIO -->
+        <div class = "container">
+        
+            <!-- CADASTRO CLIENTE -->
+            <div>
+                <h2 id="titulo">Cadasto de Cliente</h2>
+                <p id="subtitulo">Insira seus dados:</p>
+                <br>
+    
+                <form>
+                    <!-- INPUT NOME -->
+                    <div>
+
+                        <div>
+                            <label>Nome</label>
+                        </div>
+                        
+                        <input class="input" type="text" name="nome" id="nome" placeholder="Digite" required>
+
+                    </div>
+                    
+                    <!-- INPUT SOBRENOME -->
+                    <div>
+                        <div>
+                            <label>Sobrenome</label>
+                        </div>
+                        <input class="input"type="text" name="sobrenome" id="sobrenome" placeholder="Digite"> 
+                    </div>
+                    
+                    <!-- INPUT CPF -->
+                    <div>
+                        <div>
+                            <label>CPF</label>
+                        </div>
+                        <input class="input" type="text" name="cpf"id="cpf" placeholder="Digite"required> 
+                    </div>
+                    
+                    <!-- INPUT E-MAIL -->
+                    <div>
+                        <div>
+                            <label>E-mail</label>
+                        </div>
+                        <input class="input"  type="email", name="email" placeholder="Digite"required>
+                    </div>
+                    
+                    <!-- INPUT TELEFONE -->
+                    <div>
+                        <div>
+                            <label>Telefone</label>
+                        </div>
+                        <input class="input" type="text" name="telefone" id="telefone" placeholder="Digite"required> 
+                    </div>
+                    
+                    <br>
+                    
+                    <!-- INPUT BOTÃO DE CADASTRO -->
+                    <div>
+                        <button type="submit" class="button">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        
+    
+
             
-                <!-- CADASTRO CLIENTE -->
+            <!-- CADASTRO FORNECEDOR -->
+            <div class = "sub_container">
+                <h2 id="titulo">Cadasto de Fornecedor</h2>
+                <p id="subtitulo">Insira seus dados:</p>
+                <br>
+                
+                <form>
+                    <!-- INPUT NOME FANTASIA -->
+                    <div>
+                        <div>
+                            <label>Nome Fantasia</label>
+                        </div>
+                        <input class="input"  type="nomeFantasia", name="nomeFantasia", id="nomeFantasia" placeholder="Digite"required>
+                    </div>
+                    
+                    <!-- INPUT RAZÃO SOCIAL -->
+                    <div>
+                        <div>
+                            <label>Razão Social</label>
+                        </div>
+                        <input class="input" type="razaoSocial" name="razaoSocial" id="razaoSocial" placeholder="Digite"required> 
+                    </div>
+                    
+                    <!-- INPUT CNPJ -->
+                    <div>
+                        <div>
+                            <label>CNPJ</label>
+                        </div>
+                        <input class="input" type="text" name="cnpj" id="cnpj" placeholder="Digite"required>
+                    </div>
+                    
+                    <!-- INPUT E-MAIL -->
+                    <div>
+                        <div>
+                            <label>E-mail</label>
+                        </div>
+                        <input class="input"  type="email", name="email" placeholder="Digite"required>
+                    </div>
+                    
+                    <!-- INPUT TELEFONE -->
+                    <div>
+                        <div>
+                            <label>Telefone</label>
+                        </div>
+                        <input class="input" type="text" name="telefone" id="telefone" placeholder="Digite"required>
+                    </div>
+                    
+                    <br>
+
+                    <!-- BOTÃO DE CADASTRO -->
+                    <div>
+                        <button type="submit" class="button">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="container_actions">
+
+                <div class="container_title" style = "padding-top: 0px;">
+
+                    <h2>Tabela de Ações</h2>
+
+                </div>
+                
                 <div>
-                    <h2 id="titulo">Cadasto de Cliente</h2>
-                    <p id="subtitulo">Insira seus dados:</p>
-                    <br>
-        
-                    <form>
-                        <!-- INPUT NOME -->
-                        <div>
-
-                            <div>
-                                <label>Nome</label>
-                            </div>
-                            
-                            <input class="input" type="text" name="nome" id="nome" placeholder="Digite" required>
-
-                        </div>
-                        
-                        <!-- INPUT SOBRENOME -->
-                        <div>
-                            <div>
-                                <label>Sobrenome</label>
-                            </div>
-                            <input class="input"type="text" name="sobrenome" id="sobrenome" placeholder="Digite"> 
-                        </div>
-                        
-                        <!-- INPUT CPF -->
-                        <div>
-                            <div>
-                                <label>CPF</label>
-                            </div>
-                            <input class="input" type="text" name="cpf"id="cpf" placeholder="Digite"required> 
-                        </div>
-                        
-                        <!-- INPUT E-MAIL -->
-                        <div>
-                            <div>
-                                <label>E-mail</label>
-                            </div>
-                            <input class="input"  type="email", name="email" placeholder="Digite"required>
-                        </div>
-                        
-                        <!-- INPUT TELEFONE -->
-                        <div>
-                            <div>
-                                <label>Telefone</label>
-                            </div>
-                            <input class="input" type="text" name="telefone" id="telefone" placeholder="Digite"required> 
-                        </div>
-                        
-                        <br>
-                        
-                        <!-- INPUT BOTÃO DE CADASTRO -->
-                        <div>
-                            <button type="submit" class="button">Enviar</button>
-                        </div>
-                    </form>
+                    <button type="button"  class="button">Imprimir</button>
                 </div>
-            
-        
 
-             
-                <!-- CADASTRO FORNECEDOR -->
-                <div class = "sub_container">
-                    <h2 id="titulo">Cadasto de Fornecedor</h2>
-                    <p id="subtitulo">Insira seus dados:</p>
-                    <br>
-        
-                    <form>
-                        <!-- INPUT NOME FANTASIA -->
-                        <div>
-                            <div>
-                                <label>Nome Fantasia</label>
-                            </div>
-                            <input class="input"  type="nomeFantasia", name="nomeFantasia", id="nomeFantasia" placeholder="Digite"required>
-                        </div>
-                        
-                        <!-- INPUT RAZÃO SOCIAL -->
-                        <div>
-                            <div>
-                                <label>Razão Social</label>
-                            </div>
-                            <input class="input" type="razaoSocial" name="razaoSocial" id="razaoSocial" placeholder="Digite"required> 
-                        </div>
-                        
-                        <!-- INPUT CNPJ -->
-                        <div>
-                            <div>
-                                <label>CNPJ</label>
-                            </div>
-                            <input class="input" type="text" name="cnpj" id="cnpj" placeholder="Digite"required>
-                        </div>
-                        
-                        <!-- INPUT E-MAIL -->
-                        <div>
-                            <div>
-                                <label>E-mail</label>
-                            </div>
-                            <input class="input"  type="email", name="email" placeholder="Digite"required>
-                        </div>
-                        
-                        <!-- INPUT TELEFONE -->
-                        <div>
-                            <div>
-                                <label>Telefone</label>
-                            </div>
-                            <input class="input" type="text" name="telefone" id="telefone" placeholder="Digite"required>
-                        </div>
-                        
-                        <br>
-
-                        <!-- BOTÃO DE CADASTRO -->
-                        <div>
-                            <button type="submit" class="button">Enviar</button>
-                        </div>
-                    </form>
+                <div>
+                    <button type="button"  class="button">REMOVER CLIENTE</button>
                 </div>
+
+                <div>
+                    <button type="button"  class="button">REMOVER FORNECEDOR</button>
+                </div>
+
+
             </div>
     </body>
 </html>
