@@ -7,100 +7,148 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel = "stylesheet" type = "text/css" href = "./css/main.css">
+        <link rel = "stylesheet" type = "text/css" href = "./css/button.css">
+        <link rel = "stylesheet" type = "text/css" href = "./css/campo.css">
+        <link rel = "stylesheet" type = "text/css" href = "./css/header.css">
+
         <!-- Nome da pagina -->
         <title>Neo Roman</title>
     </head>
-
+    
     <body>
-        <!-- Header do site -->
-        <div>
+
+        <!-- HEADER -->
+        <header>
             <h1>Neo Roman</h1>
-            <h2>Seja bem vindo(a).</h2>
-        </div>
+        </header>
 
-        <!-- Cadastro para o cliente -->
-        <div>
-            <h2 id="titulo">Cadasto de cliente</h2>
-            <p id="subtitulo">Insira seus dados:</p>
-            <br>
-
-            <form>
-
-                <!-- Campo nome -->
-                <div class="campo">
-                    <label>Nome</label>
-                    <input type="text" name="nome" id="nome" required>
-                </div>
+        <!-- CONTAINER DE TITULO DA PÁGINA -->
+        <div class = "container_title">
+            
+            <h2>Seja bem-vindo(a)!</h2>
         
-                <!-- Campo sobrenome -->
-                 <div class="campo">
-                     <label>Sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome"> 
-                </div>
-
-                <!-- Campo email -->
-                <div class="campo">
-                    <label>Email</label>
-                    <input type="email", name="email" required>
-                </div>
-
-                <!-- Campo CPF -->
-                <div class="campo">
-                    <label>CPF</label>
-                    <input type="text" name="cpf" id="cpf" required> 
-                </div>
-
-                <!-- Campo telefone -->
-                <div class="campo">
-                    <label>Telefone</label>
-                    <input type="text" name="telefone" id="telefone" required> 
-                </div>
-
-                <!-- Botão para enviar o cadastro -->
-                <button type="submit" class="botao">Enviar</button>
-            </form>
         </div>
-
-        <!-- Cadastro para o fornecedor -->
-        <div>
-            <h2 id="titulo">Cadasto de fornecedor</h2>
-            <p id="subtitulo">Insira seus dados:</p>
-            <br>
-
-            <form>
-                <!-- Campo CNPJ -->
-                <div class="campo">
-                    <label>CNPJ</label>
-                    <input type="text" name="cnpj" id="cnpj" required>
-                </div>
+            <!-- CONTAINER DE FORMUÃRIO -->
+            <div class = "container">
+            
+                <!-- CADASTRO CLIENTE -->
+                <div>
+                    <h2 id="titulo">Cadasto de Cliente</h2>
+                    <p id="subtitulo">Insira seus dados:</p>
+                    <br>
         
-                <!-- Campo razão social -->
-                 <div class="campo">
-                     <label>Razão social</label>
-                    <input type="text" name="razaoSocial" id="razaoSocial" required> 
-                </div>
+                    <form>
+                        <!-- INPUT NOME -->
+                        <div>
 
-                <!-- Campo nome fantasma -->
-                <div class="campo">
-                    <label>Nome fantasma</label>
-                    <input type="text" name="nomeFantasma" id="nomeFantasma" required> 
-                </div>
+                            <div>
+                                <label>Nome</label>
+                            </div>
+                            
+                            <input class="input" type="text" name="nome" id="nome" placeholder="Digite" required>
 
-                <!-- Campo email -->
-                <div class="campo">
-                    <label>Email</label>
-                    <input type="email", name="email" required>
+                        </div>
+                        
+                        <!-- INPUT SOBRENOME -->
+                        <div>
+                            <div>
+                                <label>Sobrenome</label>
+                            </div>
+                            <input class="input"type="text" name="sobrenome" id="sobrenome" placeholder="Digite"> 
+                        </div>
+                        
+                        <!-- INPUT CPF -->
+                        <div>
+                            <div>
+                                <label>CPF</label>
+                            </div>
+                            <input class="input" type="text" name="cpf"id="cpf" placeholder="Digite"required> 
+                        </div>
+                        
+                        <!-- INPUT E-MAIL -->
+                        <div>
+                            <div>
+                                <label>E-mail</label>
+                            </div>
+                            <input class="input"  type="email", name="email" placeholder="Digite"required>
+                        </div>
+                        
+                        <!-- INPUT TELEFONE -->
+                        <div>
+                            <div>
+                                <label>Telefone</label>
+                            </div>
+                            <input class="input" type="text" name="telefone" id="telefone" placeholder="Digite"required> 
+                        </div>
+                        
+                        <br>
+                        
+                        <!-- INPUT BOTÃO DE CADASTRO -->
+                        <div>
+                            <button type="submit" class="button">Enviar</button>
+                        </div>
+                    </form>
                 </div>
+            
+        
 
-                <!-- Campo telefone -->
-                <div class="campo">
-                    <label>Telefone</label>
-                    <input type="text" name="telefone" id="telefone" required> 
+             
+                <!-- CADASTRO FORNECEDOR -->
+                <div class = "sub_container">
+                    <h2 id="titulo">Cadasto de Fornecedor</h2>
+                    <p id="subtitulo">Insira seus dados:</p>
+                    <br>
+        
+                    <form>
+                        <!-- INPUT NOME FANTASIA -->
+                        <div>
+                            <div>
+                                <label>Nome Fantasia</label>
+                            </div>
+                            <input class="input"  type="nomeFantasia", name="nomeFantasia", id="nomeFantasia" placeholder="Digite"required>
+                        </div>
+                        
+                        <!-- INPUT RAZÃO SOCIAL -->
+                        <div>
+                            <div>
+                                <label>Razão Social</label>
+                            </div>
+                            <input class="input" type="razaoSocial" name="razaoSocial" id="razaoSocial" placeholder="Digite"required> 
+                        </div>
+                        
+                        <!-- INPUT CNPJ -->
+                        <div>
+                            <div>
+                                <label>CNPJ</label>
+                            </div>
+                            <input class="input" type="text" name="cnpj" id="cnpj" placeholder="Digite"required>
+                        </div>
+                        
+                        <!-- INPUT E-MAIL -->
+                        <div>
+                            <div>
+                                <label>E-mail</label>
+                            </div>
+                            <input class="input"  type="email", name="email" placeholder="Digite"required>
+                        </div>
+                        
+                        <!-- INPUT TELEFONE -->
+                        <div>
+                            <div>
+                                <label>Telefone</label>
+                            </div>
+                            <input class="input" type="text" name="telefone" id="telefone" placeholder="Digite"required>
+                        </div>
+                        
+                        <br>
+
+                        <!-- BOTÃO DE CADASTRO -->
+                        <div>
+                            <button type="submit" class="button">Enviar</button>
+                        </div>
+                    </form>
                 </div>
-
-                <!-- Botão para enviar o cadastro -->
-                <button type="submit" class="botao">Enviar</button>
-            </form>
-        </div>
+            </div>
     </body>
 </html>
