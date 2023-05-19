@@ -7,11 +7,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel = "stylesheet" type = "text/css" href = "./css/main.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/button.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/campo.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/header.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/container.css">
+        <!-- CSS -->
+        <link rel = "stylesheet" type = "text/css" href = "css/main.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/button.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/campo.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/header.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/containers.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/modal.css">
+      
+        <!-- Java script -->
+        <script src="JS/modal.js" defer></script>
 
         <!-- Nome da pagina -->
         <title>Neo Roman</title>
@@ -30,8 +35,6 @@
             <h2>Seja bem-vindo(a)!</h2>
         
         </div>
-
-
 
         <!-- CONTAINER DE FORMUÃRIO -->
         <div class = "container">
@@ -161,29 +164,58 @@
                     <h2>Tabela de Ações</h2>
 
                 </div>
-                
 
                 <h3>CLIENTE</h3>
 
                 <div style = "display: flex; justify-content: center;">
 
-                    <button type="button" style= "margin-right: 2%;width: 50%; background-color: #59814c;" class="button">Imprimir</button>
+                    <button id="open_modal" type="button" style= "margin-right: 2%;width: 50%; background-color: #59814c;" class="button">Imprimir</button>
                     
                     <button type="button" class="button" style="width: 50%;background-color: #8f2f2f">REMOVER</button>
 
                 </div>
 
-
-
                 <h3 style="margin-top: 8%;">FORNCEDOR</h3>
 
                 <div div style = "display: flex; justify-content: center;">
 
-                    <button type="button"  style= "margin-right: 2%;width: 50%; background-color: #59814c;" class="button">Imprimir</button>
+                    <button id="open_modal" type="button" style= "margin-right: 2%;width: 50%; background-color: #59814c;" class="button">Imprimir</button>
 
                     <button type="button" class="button" style="width: 50%;background-color: #8f2f2f;">REMOVER</button>
 
                 </div>
             </div>
+
+            <!-- Fade para focar no modal -->
+            <div id="fade" class="hide"></div>
+
+            <!-- modal para imprimir a pilha e a fila -->
+            <div id="modal" class="hide">
+
+                <!-- Header do modal -->
+                <div class="modal_header">
+                    <!-- Texto da header -->
+                    <h1> Print </h1>
+
+                    <!-- Botão para fechar o modal -->
+                    <button id="close_modal" class="button" style="background-color: #8f2f2f;">Fechar</button>
+                </div>
+
+                <!-- Corpo do modal -->
+                <div class="modal_body">
+                    <p id="print">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aperiam minima vitae mollitia! 
+                    Quod rerum quia totam maxime similique dolorum reiciendis doloremque iusto explicabo, ipsum laudantium minima, fugiat tenetur minus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aperiam minima vitae mollitia! 
+                    Quod rerum quia totam maxime similique dolorum reiciendis doloremque iusto explicabo, ipsum laudantium minima, fugiat tenetur minus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aperiam minima vitae mollitia! 
+                    Quod rerum quia totam maxime similique dolorum reiciendis doloremque iusto explicabo, ipsum laudantium minima, fugiat tenetur minus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aperiam minima vitae mollitia! 
+                    Quod rerum quia totam maxime similique dolorum reiciendis doloremque iusto explicabo, ipsum laudantium minima, fugiat tenetur minus?
+                    </p>
+                </div>
+            </div>
+
+
     </body>
 </html>
