@@ -15,7 +15,7 @@
         <link rel = "stylesheet" type = "text/css" href = "css/containers.css">
         <link rel = "stylesheet" type = "text/css" href = "css/modal.css">
       
-        <!-- Java script -->
+        <!-- JavaScript -->
         <script src="JS/modal.js" defer></script>
 
         <!-- Nome da pagina -->
@@ -23,6 +23,17 @@
     </head>
     
     <body>
+        
+        <script>
+            function chora(){
+                var nome_fantasia2 = document.getElementById('nome').value;
+                var razao_social2 = document.getElementById('sobrenome').value;
+                var cnpj2 = document.getElementById('cpf').value;
+                var email2 = document.getElementById('email').value;
+                var telefone2 = document.getElementById('telefone').value;
+                
+                }
+        </script>
 
         <!-- HEADER -->
         <header>
@@ -45,7 +56,7 @@
                 <p id="subtitulo">Insira seus dados:</p>
                 <br>
     
-                <form>
+                <form id = "formulario_cliente">
                     <!-- INPUT NOME -->
                     <div>
 
@@ -70,7 +81,7 @@
                         <div>
                             <label>CPF</label>
                         </div>
-                        <input class="input" type="text" name="cpf"id="cpf" placeholder="Digite"required> 
+                        <input class="input" type="cpf" name="cpf"id="cpf" placeholder="Digite"required> 
                     </div>
                     
                     <!-- INPUT E-MAIL -->
@@ -78,7 +89,7 @@
                         <div>
                             <label>E-mail</label>
                         </div>
-                        <input class="input"  type="email", name="email" placeholder="Digite"required>
+                        <input class="input"  type="email" name="email" id="email"placeholder="Digite"required>
                     </div>
                     
                     <!-- INPUT TELEFONE -->
@@ -91,23 +102,23 @@
                     
                     <br>
                     
+                    
+
                     <!-- INPUT BOTÃO DE CADASTRO -->
                     <div>
-                        <button type="submit" class="button">Enviar</button>
+                        <button type="submit" class="button" id="btn_cliente" onclick="chora()">Enviar</button>
                     </div>
                 </form>
             </div>
         
-    
 
-            
             <!-- CADASTRO FORNECEDOR -->
             <div class = "sub_container">
                 <h2 id="titulo">Cadastro de Fornecedor</h2>
                 <p id="subtitulo">Insira seus dados:</p>
                 <br>
                 
-                <form>
+                <form id = "formulario_forn">
                     <!-- INPUT NOME FANTASIA -->
                     <div>
                         <div>
@@ -137,7 +148,7 @@
                         <div>
                             <label>E-mail</label>
                         </div>
-                        <input class="input"  type="email", name="email" placeholder="Digite"required>
+                        <input class="input"  type="email" name="email" id="emailforn" placeholder="Digite"required>
                     </div>
                     
                     <!-- INPUT TELEFONE -->
@@ -145,14 +156,14 @@
                         <div>
                             <label>Telefone</label>
                         </div>
-                        <input class="input" type="text" name="telefone" id="telefone" placeholder="Digite"required>
+                        <input class="input" type="text" name="telefone" id="telefoneforn" placeholder="Digite"required>
                     </div>
                     
                     <br>
 
                     <!-- BOTÃO DE CADASTRO -->
                     <div>
-                        <button type="submit" class="button">Enviar</button>
+                        <button type="submit" class="button" id="btn_forn" onclick="push_pilha()">Enviar</button>
                     </div>
                 </form>
             </div>
