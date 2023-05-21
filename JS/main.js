@@ -2,12 +2,12 @@ var cliente = new fila();
 var fornecedor = new pilha();
 
 function enqueue_fila(){
-    var nome1 = document.getElementById("nome").value;
-    var sobrenome1 = document.getElementById("sobrenome").value;
-    var cpf1 = document.getElementById("cpf").value;
-    var email1 = document.getElementById("email").value;
-    var telefone1 = document.getElementById("telefone").value;
-  cliente.enqueue(nome1, sobrenome1, email1, cpf1, telefone1);
+    var nome_cliente = document.getElementById("nome").value;
+    var sobrenome = document.getElementById("sobrenome").value;
+    var cpf = document.getElementById("cpf").value;
+    var email_cliente = document.getElementById("email").value;
+    var telefone_cliente = document.getElementById("telefone").value;
+    cliente.enqueue(nome_cliente, sobrenome, email_cliente, cpf, telefone_cliente);
 } 
 
 function dequeue_fila(){
@@ -19,7 +19,13 @@ function print_fila(){
 }
 
 function push_pilha(){
-  fornecedor.push(cnpj2, razao_social2, nome_fantasia2, email2, telefone2);
+    var nome_forn = document.getElementById("nomeFantasia").value;
+    var razao = document.getElementById("razaoSocial").value;
+    var cnpj = document.getElementById("cnpj").value;
+    var email_forn = document.getElementById("emailforn").value;
+    var telefone_forn = document.getElementById("telefoneforn").value;
+    fornecedor.push(cnpj, razao, nome_forn, email_forn, telefone_forn);
+    
 }
 
 function pop_pilha(){
