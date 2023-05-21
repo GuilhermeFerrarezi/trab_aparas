@@ -6,7 +6,7 @@ class fila {
   }
 
   enqueue(nome, sobrenome, email, cpf, telefone) {
-    let no_trab = new node_cliente(nome, sobrenome, email, cpf, telefone);
+    let no_trab = new Node_cliente(nome, sobrenome, email, cpf, telefone);
     if (this.size == 0) {
       this.head = no_trab;
       this.tail = no_trab;
@@ -21,8 +21,7 @@ class fila {
   dequeue() {
     let trab;
     if (this.size == 0) {
-      console.log("Fila vazia");
-      return null;
+      return "Fila vazia";
     } else if (this.size == 1) {
       trab = this.head;
       this.head = null;
@@ -38,13 +37,15 @@ class fila {
 
   imprimeFila() {
     let no_trab = this.head;
+    let retorno = "";
     if (this.size == 0) {
-      console.log("Fila vazia");
+      return "Fila vazia";
     } else {
       for(let i = 0; i < this.size; i++) {
-        console.log("Nome: " + no_trab.nome + "\nSobrenome: " + no_trab.sobrenome + "\nEmail: " + no_trab.email + "\nCPF: " + no_trab.cpf + "\nTelefone: " + no_trab.telefone + "\n");
+        retorno += ("CNPJ: " + no_trab.cnpj + "\nRazão Social: " + no_trab.razao_social + "\nNome Fantasia: " + no_trab.nome_fantasia + "\nEmail: " + no_trab.email + "\nTelefone: " + no_trab.telefone + "\n\n");
         no_trab = no_trab.next;
       }
+      return retorno;
     }
   }
 }
