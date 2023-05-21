@@ -32,12 +32,12 @@ function push_pilha(){
     let cnpj = document.getElementById("cnpj").value;
     let email_forn = document.getElementById("emailforn").value;
     let telefone_forn = document.getElementById("telefoneforn").value;
-    //if (nome_forn != "" && razao != "" && cnpj != "" && email_forn != "" && telefone_forn != "")
-    //{
+    if (nome_forn != "" && razao != "" && cnpj != "" && email_forn != "" && telefone_forn != "")
+    {
       fornecedor.push(cnpj, razao, nome_forn, email_forn, telefone_forn);
       formFornecedor.reset();
-    //}
-    //else console.log("Form vazio");
+    }
+    else console.log("Form vazio");
 }
 
 function pop_pilha(){
