@@ -16,6 +16,7 @@
         <link rel = "stylesheet" type = "text/css" href = "css/modal.css">
       
         <!-- JavaScript -->
+
         <script src="JS/node_cliente.js" defer></script>
         <script src="JS/node_fornecedor.js" defer></script>
         <script src="JS/fila.js" defer></script>
@@ -92,14 +93,12 @@
                         </div>
                         <input class="input" type="text" name="telefone" id="telefone" placeholder="Digite"required> 
                     </div>
-                    
                     <br>
-
+                </form>
                     <!-- INPUT BOTÃO DE CADASTRO -->
                     <div>
-                        <button type="submit" class="button" id="btn_cliente" onclick="enqueue_fila()">Enviar</button>
+                        <button class="button" id="btn_cliente">Enviar</button>
                     </div>
-                </form>
             </div>
         
 
@@ -149,14 +148,12 @@
                         </div>
                         <input class="input" type="text" name="telefone" id="telefoneforn" placeholder="Digite"required>
                     </div>
-                    
                     <br>
-
+                </form>
                     <!-- BOTÃO DE CADASTRO -->
                     <div>
-                        <button type="submit" class="button" id="btn_forn" onclick="push_pilha()">Enviar</button>
+                        <button class="button" id="btn_forn">Enviar</button>
                     </div>
-                </form>
             </div>
             
             <div class="container_actions" style="align-self: center;">
@@ -171,9 +168,9 @@
 
                 <div style = "display: flex; justify-content: center;">
 
-                    <button id="open_modal" type="button" style= "margin-right: 2%;width: 50%; background-color: #59814c;" class="button">Imprimir</button>
+                    <button id="open_modal_cliente" type="button" style= "margin-right: 2%;width: 50%; background-color: #59814c;" class="button">Imprimir</button>
                     
-                    <button type="button" class="button" style="width: 50%;background-color: #8f2f2f">REMOVER</button>
+                    <button id="remover_cliente" type="button" class="button" style="width: 50%;background-color: #8f2f2f">REMOVER</button>
 
                 </div>
 
@@ -181,9 +178,9 @@
 
                 <div div style = "display: flex; justify-content: center;">
 
-                    <button id="open_modal" type="button" style= "margin-right: 2%;width: 50%; background-color: #59814c;" class="button">Imprimir</button>
+                    <button id="open_modal_fornecedor" type="button" style= "margin-right: 2%;width: 50%; background-color: #59814c;" class="button">Imprimir</button>
 
-                    <button type="button" class="button" style="width: 50%;background-color: #8f2f2f;" onclick="imprimePilha()">REMOVER</button>
+                    <button id="remover_fornecedor" type="button" class="button" style="width: 50%;background-color: #8f2f2f;">REMOVER</button>
 
                 </div>
             </div>
@@ -197,7 +194,7 @@
                 <!-- Header do modal -->
                 <div class="modal_header">
                     <!-- Texto da header -->
-                    <h1> Print </h1>
+                    <h1 id="print_header">Print</h1>
 
                     <!-- Botão para fechar o modal -->
                     <button id="close_modal" class="button" style="background-color: #8f2f2f;">Fechar</button>
@@ -206,7 +203,6 @@
                 <!-- Corpo do modal -->
                 <div class="modal_body">
                     <p id="print">
-                    
                     </p>
                 </div>
             </div>
