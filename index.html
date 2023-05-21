@@ -16,18 +16,18 @@
         <link rel = "stylesheet" type = "text/css" href = "css/modal.css">
       
         <!-- JavaScript -->
+        <script src="JS/node_cliente.js" defer></script>
+        <script src="JS/node_fornecedor.js" defer></script>
+        <script src="JS/fila.js" defer></script>
+        <script src="JS/pilha.js" defer></script>
+        <script src="JS/main.js" defer></script>
         <script src="JS/modal.js" defer></script>
-        <script src="JS/node_cliente.js"></script>
-        <script src="JS/node_fornecedor.js"></script>
-        <script src="JS/fila.js"></script>
-        <script src="JS/pilha.js"></script>
 
         <!-- Nome da pagina -->
         <title>Neo Roman</title>
     </head>
     
     <body>
-
         <!-- HEADER -->
         <header>
             <h1>Neo Roman</h1>
@@ -94,8 +94,6 @@
                     </div>
                     
                     <br>
-                    
-                    
 
                     <!-- INPUT BOTÃO DE CADASTRO -->
                     <div>
@@ -185,7 +183,7 @@
 
                     <button id="open_modal" type="button" style= "margin-right: 2%;width: 50%; background-color: #59814c;" class="button">Imprimir</button>
 
-                    <button type="button" class="button" style="width: 50%;background-color: #8f2f2f;">REMOVER</button>
+                    <button type="button" class="button" style="width: 50%;background-color: #8f2f2f;" onclick="imprimePilha()">REMOVER</button>
 
                 </div>
             </div>
@@ -208,14 +206,7 @@
                 <!-- Corpo do modal -->
                 <div class="modal_body">
                     <p id="print">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aperiam minima vitae mollitia! 
-                    Quod rerum quia totam maxime similique dolorum reiciendis doloremque iusto explicabo, ipsum laudantium minima, fugiat tenetur minus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aperiam minima vitae mollitia! 
-                    Quod rerum quia totam maxime similique dolorum reiciendis doloremque iusto explicabo, ipsum laudantium minima, fugiat tenetur minus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aperiam minima vitae mollitia! 
-                    Quod rerum quia totam maxime similique dolorum reiciendis doloremque iusto explicabo, ipsum laudantium minima, fugiat tenetur minus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aperiam minima vitae mollitia! 
-                    Quod rerum quia totam maxime similique dolorum reiciendis doloremque iusto explicabo, ipsum laudantium minima, fugiat tenetur minus?
+                    
                     </p>
                 </div>
             </div>
